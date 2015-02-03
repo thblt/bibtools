@@ -14,7 +14,11 @@ It reports a list of non-conforming entries.
 
 ## find_dup_keys.py
 
+Identifies duplicate keys accross multiple .bib files.
+
 ## find_dup_titles.py
+
+Find duplicated titles in a BibTeX file. Somehow eases the process of finding duplicates.
 
 ## hathidl.py
 
@@ -22,8 +26,19 @@ Sorry, top secret, not commited.
 
 ## missing_table.py
 
+Used to print a list of article I still need to find a PDF version of. Technically, it lists the entries of type ```article```s with no ```Bdsk-File-1``` field. ```Bdsk-File-1``` is a [BibDesk][bibdesk]-specific field. It is a base64-encoded plist and [provides a better mechanism for linking entries to external files](http://bibdesk-users.661331.n2.nabble.com/Path-implications-when-sharing-bib-files-with-Bdsk-File-1-entries-td661338.html), usually PDFs.
+
 ## mkcover.py
+
+Generates standard covers in LaTeX from notices. Probably useless.
 
 ## pmiddump.py
 
+Simple regex script to extract PMIDs from random strings.
+
 ## spring2bib.py
+
+Converts SpringerLink URLs to BibTeX entries.
+
+[bibdesk]: http://bibdesk.sourceforge.net/
+
