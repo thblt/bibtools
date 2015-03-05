@@ -22,8 +22,29 @@ Sorry, top secret, not commited.
 
 ## missing_table.py
 
+Generate a list of ```article```s with no ```Bdsk-File-1``` field. ```Bdsk-File-1``` is a [BibDesk][bibdesk]-specific field. It is a base64-encoded plist and provides a better mechanism[^bdskfile1] for holding link to external files, usually PDFs.
+
 ## mkcover.py
+
+Generates standard covers in LaTeX from notices. Probably useless. I use them 
 
 ## pmiddump.py
 
+Simple regex script to extract PMIDs from random strings.
+
 ## spring2bib.py
+
+Converts SpringerLink URLs to BibTeX entries.
+
+[bibdesk]: 
+
+[^bdskfile1]: 
+	> To be precise, it's a base64 encoded (keyed) archived dictionary containing a relative path and a file alias (an alias stores a full path and a file ID). It is designed to support a large range of storage procedures, as it can find a file by relative path, absolute  path, and file ID (in that order). This means that you can 
+	
+	- move/rename the .bib file (as it stores full paths) 
+	- move/rename a linked file (as it stores file IDs) 
+	- move the .bib file and linked files together (as it stores relative   
+	paths) 
+	- copy the .bib file and linked files togther, even between different   
+	machines (as it stores relative paths) 
+	
