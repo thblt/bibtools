@@ -26,11 +26,19 @@ Sorry, top secret, not commited.
 
 ## missing_table.py
 
+<<<<<<< HEAD
+Generate a list of ```article```s with no ```Bdsk-File-1``` field. ```Bdsk-File-1``` is a [BibDesk][bibdesk]-specific field. It is a base64-encoded plist and provides a better mechanism[^bdskfile1] for holding link to external files, usually PDFs.
+
+## mkcover.py
+
+Generates standard covers in LaTeX from notices. Probably useless. I use them 
+=======
 Used to print a list of article I still need to find a PDF version of. Technically, it lists the entries of type ```article```s with no ```Bdsk-File-1``` field. ```Bdsk-File-1``` is a [BibDesk][bibdesk]-specific field. It is a base64-encoded plist and [provides a better mechanism for linking entries to external files](http://bibdesk-users.661331.n2.nabble.com/Path-implications-when-sharing-bib-files-with-Bdsk-File-1-entries-td661338.html), usually PDFs.
 
 ## mkcover.py
 
 Generates standard covers in LaTeX from notices. Probably useless.
+>>>>>>> 3887fbbc7b83a6bb99d43684ddecee8db30c2e20
 
 ## pmiddump.py
 
@@ -40,6 +48,7 @@ Simple regex script to extract PMIDs from random strings.
 
 Converts SpringerLink URLs to BibTeX entries.
 
+<<<<<<< HEAD
 [bibdesk]: 
 
 [^bdskfile1]: 
@@ -52,3 +61,7 @@ Converts SpringerLink URLs to BibTeX entries.
 	- copy the .bib file and linked files togther, even between different   
 	machines (as it stores relative paths) 
 	
+=======
+[bibdesk]: http://bibdesk.sourceforge.net/
+
+>>>>>>> 3887fbbc7b83a6bb99d43684ddecee8db30c2e20
