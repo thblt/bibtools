@@ -1,8 +1,6 @@
 import os, re, subprocess, sys
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import author as bpAuthor, editor as bpEditor
-from jinja2 import Environment, FileSystemLoader
-from tempfile import TemporaryDirectory
 
 def valnot(entry, key): # Value or Nothing
 	if key in entry.keys():
@@ -12,9 +10,9 @@ def valnot(entry, key): # Value or Nothing
 if len(sys.argv) < 2:
 	print("Usage: {0} in.bib [in2.bib...]".format(sys.argv[0]))
 	exit(-1)
-	
+
 bibs = []
-for file in sys.argv[2:]:
+for file in sys.argv[1:]:
 	bibs.append (BibTexParser(open(file, 'r')).get_entry_dict())
 
 for bib in bibs:
